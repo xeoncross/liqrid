@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Liqrid CSS Grid System</title>
+
+	<link href="grid.css" type="text/css" rel="stylesheet" media="screen" />
+	<style type="text/css" media="screen">
+		body {
+			margin: 20px 0 0 0;
+			text-align: center;
+			background: #fff;
+			font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		div p {
+			border: 1px solid #aaa;
+			margin: 0 0 20px 0;
+			background: #fff;
+			font-size: 20px;
+			line-height: 2em;
+		}
+		h1 { margin: 0; padding: 0; }
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="grid_12"><h1>Single Level Grid</h1><div>The following rows each total twelve columns</div><br /></div>
+
+	<!-- full length div -->
+	<div class="grid_12"><p>12</p></div>
+	
+	<div class="grid_11"><p>11</p></div>
+	<div class="grid_1"><p>1</p></div>
+	
+	<div class="grid_10"><p>10</p></div>
+	<div class="grid_2"><p>2</p></div>
+
+	<div class="grid_9"><p>9</p></div>
+	<div class="grid_3"><p>3</p></div>
+
+	<div class="grid_8"><p>8</p></div>
+	<div class="grid_4"><p>4</p></div>
+	
+	<div class="grid_7"><p>7</p></div>
+	<div class="grid_5"><p>5</p></div>
+	
+	<div class="grid_6"><p>6</p></div>
+	<div class="grid_6"><p>6</p></div>
+
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+	<div class="grid_1"><p>1</p></div>
+
+	<div class="grid_2"><p>2</p></div>
+	<div class="grid_2"><p>2</p></div>
+	<div class="grid_2"><p>2</p></div>
+	<div class="grid_2"><p>2</p></div>
+	<div class="grid_2"><p>2</p></div>
+	<div class="grid_2"><p>2</p></div>
+	
+	<div class="grid_3"><p>3</p></div>
+	<div class="grid_3"><p>3</p></div>
+	<div class="grid_3"><p>3</p></div>
+	<div class="grid_3"><p>3</p></div>
+	
+	<div class="grid_4"><p>4</p></div>
+	<div class="grid_4"><p>4</p></div>
+	<div class="grid_4"><p>4</p></div>
+	
+	<div class="grid_5 suffix"><p>5 (+1)</p></div>
+	<div class="grid_5 prefix"><p>(+1) 5</p></div>
+	
+	<!-- using extra spaces -->
+	<div class="grid_5 prefix"><p>(+1) 5</p></div>
+	<div class="grid_5 suffix"><p>5 (+1)</p></div>
+
+
+
+	<div class="grid_12"><h1>Multi-Level Grid (nested)</h1><div>These are containers inside grid columns</div><br /></div>
+	
+	<!-- spanning two rows -->
+	<div class="grid_8"><p>8</p>
+	
+		<div class="container">
+			<div class="grid_6"><p>4</p></div>
+			<div class="grid_6"><p>4</p></div>
+		</div>
+		
+	</div>
+	<div class="grid_4"><p style="line-height: 102px;">4</p></div>
+
+
+	<!-- complex multi-row spans -->
+	<div class="grid_4"><p>4</p>
+		<div class="container">
+			<div class="grid_9"><p>3</p></div>
+			<div class="grid_3"><p>1</p></div>
+		</div>
+		<div class="container">
+			<div class="grid_6"><p>2</p></div>
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+		</div>
+		<div class="container">
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+		</div>
+	</div>
+	<div class="grid_4"><p style="line-height: 226px;">4</p></div>
+	<div class="grid_4"><p>4</p>
+		<div class="container">
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_9"><p>3</p></div>
+		</div>
+		<div class="container">
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_6"><p>2</p></div>
+		</div>
+		<div class="container">
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+			<div class="grid_3"><p>1</p></div>
+		</div>
+	</div>
+
+
+	<!-- More information -->
+	<div class="grid_12">
+		<h3><a href="http://github.com/Xeoncross/liqrid">http://github.com/Xeoncross/liqrid</a></h3>
+	</div>
+
+</div>
+
+</body>
+</html>

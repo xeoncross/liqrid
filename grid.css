@@ -1,0 +1,38 @@
+.grid_1 { width: 6.333%;}
+.grid_2 { width: 14.666%; }
+.grid_3 { width: 23%; }
+.grid_4 { width: 31.333%; }
+.grid_5 { width: 39.666%; }
+.grid_6 { width: 48%; }
+.grid_7 { width: 56.333%; }
+.grid_8 { width: 64.666%; }
+.grid_9 { width: 73%; }
+.grid_10 { width: 81.333%; }
+.grid_11 { width: 89.666%; }
+.grid_12 { width: 98%; }
+
+.grid_1, .grid_2, .grid_3, .grid_4,
+.grid_5, .grid_6, .grid_7, .grid_8,
+.grid_9, .grid_10, .grid_11, .grid_12 {
+	float: left;
+	display: inline;
+	position: relative;
+	margin-left: 1%;
+	*margin-left: .8%; /* IE 7 */
+	_margin-left: .6%; /* IE <= 6 */
+	margin-right: 1%;
+	*margin-right: .8%;
+	_margin-right: .6%;
+}
+
+.grid_1 {
+	*width: 6.6%; /* IE 7 */
+	_width: 7%; /* IE <= 6 */
+}
+
+.container { margin: 0 auto; display: inline-block; width: 100%; }
+.container .container { width: 102%; margin: 0 -1%; }
+.container .alpha { margin-left: 0; }
+.container .omega { margin-right: 0; }
+.container .prefix { padding-left: 8.333%; }
+.container .suffix { padding-right: 8.333%; }
